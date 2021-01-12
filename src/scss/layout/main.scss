@@ -1,3 +1,4 @@
+/* Punto de mejor: hacer un @import */
 @mixin flex-box() {
   display: flex;
   justify-content: center;
@@ -13,7 +14,7 @@
   &__hero {
     width: 100%;
     height: 568px;
-
+    background: $color-small;
     &--image {
       background-image: url("../images/cover.jpg");
       background-size: cover;
@@ -24,7 +25,7 @@
       width: 100%;
     }
     &--title {
-      color: $color-font-header;
+      color: $color-white;
       font-family: $font-titles;
       text-transform: uppercase;
       font-size: 42px;
@@ -36,7 +37,7 @@
       @include flex-box();
     }
     &--subtitle {
-      color: $color-font-header;
+      color: $color-white;
       font-family: $font-titles;
       margin-bottom: 45px;
       font-weight: normal;
@@ -52,7 +53,95 @@
       @include flex-box();
     }
   }
+  &__article {
+    background: $color-white;
+    margin-top: 30px;
+    &--small {
+      color: $color-small;
+      font-family: $font-secondary;
+      margin-bottom: 1 px;
+      font-size: 14px;
+      text-transform: capitalize;
+    }
+    &--title {
+      font-size: 24px;
+      font-family: $font-titles;
+      margin-bottom: 15px;
+      text-transform: capitalize;
+      font-weight: bold;
+      color: $color-h2;
+      line-height: 1.25;
+    }
+    &--text {
+      font-family: $font-secondary;
+      color: $color-p;
+      line-height: 1.67;
+      margin-bottom: 30px;
+    }
+    &--button {
+      height: 45px;
+      width: 76px;
+      color: $color-buttons;
+      font-family: $font-secondary;
+      font-size: 20px;
+      font-weight: 500; /* Descargar tipo de fuente */
+      border-radius: 22.5px;
+      background-color: $color-white;
+      margin-bottom: 45px;
+      border: solid 2px $color-buttons;
+    }
+  }
+  &__section {
+    background: $color-section;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &--title {
+      font-family: $font-titles;
+      font-weight: bold;
+      font-size: 24px;
+      margin-top: 30px;
+      margin-bottom: 45px;
+    }
+    &--button {
+      /* Punto de mejora: @mixin */
+      height: 45px;
+      width: 184px;
+      color: $color-white;
+      font-family: $font-secondary;
+      font-size: 19px;
+      background-color: $color-buttons;
+      border: solid 2px $color-buttons;
+      border-radius: 22.5px;
+      margin-bottom: 60px;
+      padding: 0 29.5px 0 30.5px;
+    }
+  }
 }
+.list {
+  list-style: none;
+  display: grid;
+  font-family: $font-secondary;
+  text-align: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 45px;
+  width: 180px;
+  margin-bottom: 45px;
+  &__item {
+    &--title {
+      font-family: $font-titles;
+      font-size: 18px;
+    }
+    &--text {
+      font-family: $font-secondary;
+      font-size: 18px;
+    }
+  }
+}
+
+/* Punto de mejor: reubicar */
 .translate {
   position: absolute;
   top: 0;
