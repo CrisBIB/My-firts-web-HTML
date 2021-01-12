@@ -42,6 +42,11 @@
         line-height: 106px;
         margin-bottom: 20px;
       }
+      @media all and (min-width: 768px) {
+        font-size: 100px;
+        line-height: 132px;
+        margin-bottom: 0;
+      }
     }
     &--subtitle {
       color: $color-white;
@@ -55,7 +60,7 @@
       }
     }
     &--scroll-down {
-      background: white;
+      background: $color-white;
       height: 45px;
       width: 45px;
       border-radius: 50%;
@@ -65,6 +70,9 @@
   &__article {
     background: $color-white;
     margin-top: 30px;
+    @media all and (min-width: 1200px) {
+      margin-top: 60px;
+    }
     &--small {
       color: $color-small;
       font-family: $font-secondary;
@@ -74,6 +82,9 @@
       text-transform: capitalize;
       @media all and (min-width: 768px) {
         margin-bottom: 0;
+      }
+      @media all and (min-width: 1200px) {
+        font-size: 16px;
       }
     }
     &--title {
@@ -87,6 +98,9 @@
       @media all and (min-width: 768px) {
         font-size: 26px;
         margin-bottom: 30px;
+      }
+      @media all and (min-width: 1200px) {
+        font-size: 32px;
       }
     }
     &--text {
@@ -105,6 +119,7 @@
       color: $color-buttons;
       font-family: $font-secondary;
       font-size: 20px;
+      text-transform: capitalize;
       font-weight: 500; /* Descargar tipo de fuente */
       border-radius: 22.5px;
       background-color: $color-white;
@@ -119,6 +134,10 @@
       }
       @media all and (min-width: 768px) {
         margin-bottom: 60px;
+        width: 91px;
+      }
+      @media all and (min-width: 1200px) {
+        width: 160px;
       }
     }
   }
@@ -145,19 +164,22 @@
       height: 45px;
       width: 184px;
       color: $color-white;
+      text-transform: capitalize;
       font-family: $font-secondary;
-      font-size: 19px;
+      font-size: 20px;
       background-color: $color-buttons;
       border: solid 2px $color-buttons;
       border-radius: 22.5px;
       margin-bottom: 60px;
-      padding: 0 29.5px 0 30.5px;
       &:active {
         background-color: $color-white;
         color: $color-buttons;
       }
       @media all and (min-width: 768px) {
         width: 210px;
+      }
+      @media all and (min-width: 768px) {
+        width: 255px;
       }
     }
   }
@@ -180,15 +202,23 @@
     margin-right: 40px;
     margin-bottom: 60px;
   }
+  @media all and (min-width: 1200px) {
+    column-gap: 26.8px;
+  }
+
   &__item {
     width: 180px;
     line-height: 30px;
+    font-size: 18px;
     @media all and (min-width: 768px) {
       width: 210px;
+      font-size: 20px;
+    }
+    @media all and (min-width: 1200px) {
+      width: 353.8px;
     }
     &--title {
       font-family: $font-titles;
-      font-size: 18px;
       @media all and (min-width: 768px) {
         margin-bottom: 14px;
         font-size: 24px;
@@ -196,9 +226,8 @@
     }
     &--text {
       font-family: $font-secondary;
-      font-size: 18px;
-      @media all and (min-width: 768px) {
-        font-size: 20px;
+      @media all and (min-width: 1200px) {
+        padding: 0 5px;
       }
     }
   }

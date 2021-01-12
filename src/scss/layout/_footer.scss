@@ -13,6 +13,9 @@
     align-items: initial;
     justify-content: space-between;
   }
+  @media all and (min-width: 1200px) {
+    justify-content: space-evenly;
+  }
   &__scroll-up {
     margin-bottom: 15px;
     background: $color-white;
@@ -25,7 +28,7 @@
     transform: translateY(-50%);
     @media all and (min-width: 768px) {
       position: absolute;
-      left: 46%;
+      left: 48%;
     }
   }
   &__list {
