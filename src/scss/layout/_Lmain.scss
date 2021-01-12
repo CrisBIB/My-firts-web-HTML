@@ -13,19 +13,18 @@
 
   &__hero {
     width: 100%;
-    height: 568px;
-    background: $color-small;
+    height: 100vh;
+    margin: auto;
     &--image {
       background-image: url("../images/cover.jpg");
       background-size: cover;
       background-position: center;
       margin: auto;
       top: 0;
-      height: 568px;
       width: 100%;
+      height: 100vh;
     }
     &--title {
-      color: $color-white;
       font-family: $font-titles;
       text-transform: uppercase;
       font-size: 42px;
@@ -34,23 +33,38 @@
       margin-top: 284px;
       margin-bottom: 10px;
       width: 300px;
+      color: $color-white;
+      text-shadow: 0 2px 3px $color-font-shadow;
       @include flex-box();
+      @media all and (min-width: 768px) {
+        margin-top: 384px;
+        font-size: 80px;
+        line-height: 106px;
+        margin-bottom: 20px;
+      }
     }
     &--subtitle {
       color: $color-white;
-      font-family: $font-titles;
-      margin-bottom: 45px;
+      font-family: $font-secondary;
+      top: 10px;
       font-weight: normal;
       font-size: 16px;
-      z-index: 1;
+      margin-bottom: 45px;
+      @media all and (min-width: 768px) {
+        margin-bottom: 30px;
+        font-size: 24px;
+      }
     }
     &--scroll-up {
       background: white;
       height: 45px;
       width: 45px;
       border-radius: 50%;
-      z-index: 1;
+
       @include flex-box();
+      /* @media all and (min-width: 768px) {
+        margin-bottom: 45px;
+      } */
     }
   }
   &__article {
@@ -59,6 +73,7 @@
     &--small {
       color: $color-small;
       font-family: $font-secondary;
+      line-height: 2.14;
       margin-bottom: 1 px;
       font-size: 14px;
       text-transform: capitalize;
@@ -70,12 +85,15 @@
       text-transform: capitalize;
       font-weight: bold;
       color: $color-h2;
-      line-height: 1.25;
+      line-height: 1.73;
+      @media all and (min-width: 768px) {
+        margin-bottom: 30px;
+      }
     }
     &--text {
       font-family: $font-secondary;
       color: $color-p;
-      line-height: 1.67;
+      line-height: 1.5;
       margin-bottom: 30px;
     }
     &--button {
@@ -89,6 +107,9 @@
       background-color: $color-white;
       margin-bottom: 45px;
       border: solid 2px $color-buttons;
+      @media all and (min-width: 768px) {
+        margin-bottom: 60px;
+      }
     }
   }
   &__section {
@@ -119,6 +140,7 @@
     }
   }
 }
+
 .list {
   list-style: none;
   display: grid;
@@ -129,6 +151,10 @@
   row-gap: 45px;
   width: 180px;
   margin-bottom: 45px;
+  @media all and (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
   &__item {
     &--title {
       font-family: $font-titles;
