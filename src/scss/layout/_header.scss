@@ -5,50 +5,14 @@
 }
 
 .header {
-  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 1;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  &__menu {
+  &__menu-button {
     background: $color-menu;
     height: 44px;
     width: 44px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    @include flex-box();
-    z-index: 2;
-  }
-  &__image {
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    height: 568px;
-  }
-
-  &__title {
-    color: $color-font-header;
-    font-family: $font-titles;
-    text-transform: uppercase;
-    font-size: 42px;
-    line-height: 55px;
-    text-align: center;
-    margin-top: 284px;
-    margin-bottom: 10px;
-  }
-  &__subtitle {
-    color: $color-font-header;
-    font-family: $font-titles;
-    margin-bottom: 45px;
-    font-weight: normal;
-    font-size: 16px;
-  }
-  &__scroll-up {
-    background: white;
-    height: 45px;
-    width: 45px;
-    border-radius: 50%;
     @include flex-box();
   }
 }

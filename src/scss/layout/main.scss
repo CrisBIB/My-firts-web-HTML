@@ -1,0 +1,64 @@
+@mixin flex-box() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  &__hero {
+    width: 100%;
+    height: 568px;
+
+    &--image {
+      background-image: url("../images/cover.jpg");
+      background-size: cover;
+      background-position: center;
+      margin: auto;
+      top: 0;
+      height: 568px;
+      width: 100%;
+    }
+    &--title {
+      color: $color-font-header;
+      font-family: $font-titles;
+      text-transform: uppercase;
+      font-size: 42px;
+      line-height: 55px;
+      text-align: center;
+      margin-top: 284px;
+      margin-bottom: 10px;
+      width: 300px;
+      @include flex-box();
+    }
+    &--subtitle {
+      color: $color-font-header;
+      font-family: $font-titles;
+      margin-bottom: 45px;
+      font-weight: normal;
+      font-size: 16px;
+      z-index: 1;
+    }
+    &--scroll-up {
+      background: white;
+      height: 45px;
+      width: 45px;
+      border-radius: 50%;
+      z-index: 1;
+      @include flex-box();
+    }
+  }
+}
+.translate {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
