@@ -70,7 +70,7 @@
   &__article {
     background: $color-white;
     margin-top: 30px;
-    @media all and (min-width: 1200px) {
+    @media all and (min-width: 1280px) {
       margin-top: 60px;
     }
     &--small {
@@ -83,7 +83,7 @@
       @media all and (min-width: 768px) {
         margin-bottom: 0;
       }
-      @media all and (min-width: 1200px) {
+      @media all and (min-width: 1280px) {
         font-size: 16px;
       }
     }
@@ -99,7 +99,7 @@
         font-size: 26px;
         margin-bottom: 30px;
       }
-      @media all and (min-width: 1200px) {
+      @media all and (min-width: 1280px) {
         font-size: 32px;
       }
     }
@@ -136,7 +136,7 @@
         margin-bottom: 60px;
         width: 91px;
       }
-      @media all and (min-width: 1200px) {
+      @media all and (min-width: 1280px) {
         width: 160px;
       }
     }
@@ -202,7 +202,7 @@
     margin-right: 40px;
     margin-bottom: 60px;
   }
-  @media all and (min-width: 1200px) {
+  @media all and (min-width: 1280px) {
     column-gap: 26.8px;
   }
 
@@ -214,7 +214,7 @@
       width: 210px;
       font-size: 20px;
     }
-    @media all and (min-width: 1200px) {
+    @media all and (min-width: 1280px) {
       width: 353.8px;
     }
     &--title {
@@ -226,7 +226,7 @@
     }
     &--text {
       font-family: $font-secondary;
-      @media all and (min-width: 1200px) {
+      @media all and (min-width: 1280px) {
         padding: 0 5px;
       }
     }

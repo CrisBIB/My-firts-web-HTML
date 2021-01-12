@@ -5,126 +5,128 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Anonymous Proxy</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/css/main.css" />
-  <link rel="icon" href="./assets/images/favicon.png" />
-
-
+  <link rel="icon" href="./assets/images/favicon2.png" />
 </head>
 
 <body>
   <header class="header">
-
-    <a href="https://adalab.es/">
+    <a class="header__menu-button" href="https://adalab.es/" target="_blank">
       <img src="./assets/images/ico-menu.svg" alt="botón menu desplegable" title="Menú"></a>
-    <h1>Anonymous Proxy</h1>
-    <h5>
-      In hac habitasse platea dictumst.
-    </h5>
-    <span class="up">
-      <img src="./assets/images/ico-scroll-down.svg" alt="botón scroll hacia abajo" title="scroll hacia abajo">
-    </span>
-
   </header>
-
   <main class="main">
+    <section class="main__hero">
+      <div class="main__hero--image"></div>
+      <div class="translate central-column">
+        <h1 class="main__hero--title">Anonymous Proxy</h1>
+        <h5 class="main__hero--subtitle">
+          In hac habitasse platea dictumst.
+        </h5>
+        <div class="main__hero--scroll-down">
+          <img src="./assets/images/ico-scroll-down.svg" alt="botón scroll hacia abajo" title="scroll hacia abajo">
+        </div>
+      </div>
+    </section>
+    <article class="main__article central-column">
+      <small class="main__article--small"> Insomnia tips</small>
 
-    <article class="article">
-      <small> Insomnia tips</small>
+      <h2 class="main__article--title"> Looking through a window</h2>
 
-      <h2> Looking through a window</h2>
-
-      <P>
+      <p class="main__article--text">
         Dones accumsan, nulla ut volutpap porttitor, quam odio tempus felis, at luctus ex diam nec lectus. Vivamus
         semper
         sodales rutrum.
-      </P>
+      </p>
 
-      <button>Go</button>
+      <button class="main__article--button">Go</button>
     </article>
 
 
-    <section>
-      <h2>
+    <section class=" central-column main__section">
+      <h2 class="main__section--title">
         3 reason to purchase
       </h2>
+      <ul class="grid">
+        <il class="grid__item">
+          <h3 class="grid__item--title">
+            Ut sed metus
+          </h3>
+          <p class="grid__item--text">
+            Lorem ipsum doler sit amet, consectur.
+          </p>
+        </il>
 
-      <article class="reason-1">
-        <h3>
-          Ut sed metus
-        </h3>
-        <p>
-          Lorem ipsum doler sit amet, consectur.
-        </p>
-      </article>
+        <il class="grid__item">
+          <h3 class="grid__item--title">
+            Curabitur ac erat
+          </h3>
+          <p class="grid__item--text">
+            Mauris mattis urna quis lorem molestie.
+          </p>
+        </il>
 
-      <article class="reason-2">
-        <h3>
-          Curabitur ac erat
-        </h3>
-        <p>
-          Mauris mattis urna quis lorem molestie.
-        </p>
-      </article>
+        <il class="grid__item">
+          <h3 class="grid__item--title">
+            Morbi dictum
+          </h3>
+          <p class="grid__item--text">
+            Aliquam in dolor et dolor tincidut.
+          </p>
+        </il>
+      </ul>
 
-      <article class="reason-3">
-        <h3>
-          Morbi dictum
-        </h3>
-        <p>
-          Aliquam in dolor et dolor tincidut.
-        </p>
-      </article>
-
-      <button class="more">More reasons</button>
+      <button class="main__section--button">More reasons</button>
     </section>
   </main>
 
 
-  <footer class="footer">
-    <span class="scroll-down">
+  <footer class="footer central-column">
+    <div class="footer__scroll-up">
       <img src="./assets/images/ico-arrow.svg" alt="botón scroll hacia arriba" title="scroll hacia arriba">
-    </span>
-    <nav>
-      <ul>
+    </div>
+    <nav class="menu">
+      <ul class="footer__list">
         <il>
-          Articles
+          <a class="footer__list--link" href="https://adalab.es/" target="_blank">Articles</a>
         </il>
         <il>
-          Books
+          <a class="footer__list--link" href="https://adalab.es/" target="_blank">Books</a>
         </il>
         <il>
-          Events
+          <a class="footer__list--link" href="https://adalab.es/" target="_blank">Events</a>
         </il>
         <il>
-          Reasons
+          <a class="footer__list--link" href="https://adalab.es/" target="_blank">Reasons</a>
         </il>
         <il>
-          Tips
-        </il>
-      </ul>
-    </nav>
-    <nav>
-
-      <ul>
-        <il>
-          Twitter
-        </il>
-        <il>
-          Instagram
-        </il>
-        <il>
-          Mastodon.social
+          <a class="footer__list--link" href="https://adalab.es/" target="_blank">Tips</a>
         </il>
       </ul>
     </nav>
+    <nav>
+      <ul class="footer__list">
+        <il>
+          <a class="footer__list--link" href="https://adalab.es/" target="_blank">Twitter</a>
+        </il>
+        <il>
+          <a class="footer__list--link" href="https://adalab.es/" target="_blank">Instagram</a>
+        </il>
+        <il>
+          <a class="footer__list--link" href="https://adalab.es/" target="_blank">Mastodon.social</a>
+        </il>
+      </ul>
+    </nav>
 
-    <small>
-      <div>
+    <small class="footer__list down">
+      <div class="footer__list--copyright">
         &copy2021
       </div>
-      <div>
-        icono corazon components
+      <div class="footer__list--love">
+        <span>we</span><span>
+          <img src="https://e.unicode-table.com/orig/80/81e84127c9f720661313e79c556702.png" alt="🧡"
+            style="width:12px;">
+        </span><span>components</span>
       </div>
     </small>
   </footer>
