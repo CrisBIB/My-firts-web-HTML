@@ -47,7 +47,6 @@
       color: $color-white;
       font-family: $font-secondary;
       top: 10px;
-      font-weight: normal;
       font-size: 16px;
       margin-bottom: 45px;
       @media all and (min-width: 768px) {
@@ -55,16 +54,12 @@
         font-size: 24px;
       }
     }
-    &--scroll-up {
+    &--scroll-down {
       background: white;
       height: 45px;
       width: 45px;
       border-radius: 50%;
-
       @include flex-box();
-      /* @media all and (min-width: 768px) {
-        margin-bottom: 45px;
-      } */
     }
   }
   &__article {
@@ -77,6 +72,9 @@
       margin-bottom: 1 px;
       font-size: 14px;
       text-transform: capitalize;
+      @media all and (min-width: 768px) {
+        margin-bottom: 0;
+      }
     }
     &--title {
       font-size: 24px;
@@ -87,14 +85,19 @@
       color: $color-h2;
       line-height: 1.73;
       @media all and (min-width: 768px) {
+        font-size: 26px;
         margin-bottom: 30px;
       }
     }
     &--text {
       font-family: $font-secondary;
+      font-size: 18px;
       color: $color-p;
       line-height: 1.5;
       margin-bottom: 30px;
+      @media all and (min-width: 768px) {
+        font-size: 20px;
+      }
     }
     &--button {
       height: 45px;
@@ -107,6 +110,13 @@
       background-color: $color-white;
       margin-bottom: 45px;
       border: solid 2px $color-buttons;
+      &:hover {
+        border-radius: 0;
+      } /* No funciona bien, revisar */
+      &:active {
+        background-color: $color-buttons;
+        color: $color-white;
+      }
       @media all and (min-width: 768px) {
         margin-bottom: 60px;
       }
@@ -124,6 +134,11 @@
       font-size: 24px;
       margin-top: 30px;
       margin-bottom: 45px;
+      line-height: 30px;
+      @media all and (min-width: 768px) {
+        font-size: 26px;
+        line-height: 45px;
+      }
     }
     &--button {
       /* Punto de mejora: @mixin */
@@ -137,11 +152,18 @@
       border-radius: 22.5px;
       margin-bottom: 60px;
       padding: 0 29.5px 0 30.5px;
+      &:active {
+        background-color: $color-white;
+        color: $color-buttons;
+      }
+      @media all and (min-width: 768px) {
+        width: 210px;
+      }
     }
   }
 }
 
-.list {
+.grid {
   list-style: none;
   display: grid;
   font-family: $font-secondary;
@@ -149,25 +171,40 @@
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
   row-gap: 45px;
-  width: 180px;
   margin-bottom: 45px;
   @media all and (min-width: 768px) {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 27.7px;
+    margin-left: 38px;
+    margin-right: 40px;
+    margin-bottom: 60px;
   }
   &__item {
+    width: 180px;
+    line-height: 30px;
+    @media all and (min-width: 768px) {
+      width: 210px;
+    }
     &--title {
       font-family: $font-titles;
       font-size: 18px;
+      @media all and (min-width: 768px) {
+        margin-bottom: 14px;
+        font-size: 24px;
+      }
     }
     &--text {
       font-family: $font-secondary;
       font-size: 18px;
+      @media all and (min-width: 768px) {
+        font-size: 20px;
+      }
     }
   }
 }
 
-/* Punto de mejor: reubicar */
+/* Punto de mejora: reubicar */
 .translate {
   position: absolute;
   top: 0;

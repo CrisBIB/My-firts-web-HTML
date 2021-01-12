@@ -8,7 +8,12 @@
   align-items: center;
   justify-content: center;
   padding-bottom: 30px;
-  &__scroll-down {
+  @media all and (min-width: 768px) {
+    flex-direction: row;
+    align-items: initial;
+    justify-content: space-between;
+  }
+  &__scroll-up {
     margin-bottom: 15px;
     background: $color-white;
     height: 45px;
@@ -18,6 +23,10 @@
     display: flex;
     justify-content: center;
     transform: translateY(-50%);
+    @media all and (min-width: 768px) {
+      position: absolute;
+      left: 46%;
+    }
   }
   &__list {
     font-size: 16px;
@@ -28,6 +37,12 @@
     align-items: center;
     margin-top: 15px;
     margin-bottom: 15px;
+    @media all and (min-width: 768px) {
+      width: 210px;
+      align-items: flex-start;
+      justify-content: initial;
+      margin-top: 45px;
+    }
     &--link {
       text-decoration: none;
       color: $color-white;
@@ -40,6 +55,13 @@
       font-size: 14px;
       line-height: 2.14;
       text-transform: none;
+      @media all and (min-width: 768px) {
+        position: relative;
+        left: 0;
+      }
     }
   }
+}
+.down {
+  order: -1;
 }
