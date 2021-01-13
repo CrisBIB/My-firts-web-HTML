@@ -116,15 +116,22 @@
       font-size: 20px;
       text-transform: capitalize;
       border-radius: 22.5px;
-      background-color: $color-white;
+      background: $color-white;
       margin-bottom: 45px;
       border: solid 2px $color-buttons;
-      /* &:hover {
+      transition: border-radius ease 2s;
+      &:hover {
         border-radius: 0;
-      } No funciona bien, revisar */
+        cursor: pointer;
+      }
       &:active {
-        background-color: $color-buttons;
+        background-color: $color-footer;
         color: $color-white;
+        border: none;
+        outline: none;
+      }
+      &:focus {
+        outline: none;
       }
       @media all and (min-width: 768px) {
         margin-bottom: 60px;
@@ -163,9 +170,17 @@
       border: solid 2px $color-buttons;
       border-radius: 22.5px;
       margin-bottom: 60px;
+      transition: border-radius ease 2s;
+      &:hover {
+        border-radius: 0;
+        cursor: pointer;
+      }
       &:active {
-        background-color: $color-white;
-        color: $color-buttons;
+        background-color: $color-footer;
+      }
+      &:focus {
+        outline: none;
+        border: none;
       }
       @media all and (min-width: 768px) {
         width: 210px;
