@@ -2,41 +2,27 @@
 
 # Anonymous Proxy Project
 
-**Anonymous Proxy Project** es más un ejercicio de evaluación de una **Adalaber** naciente, que un proyecto. Pero dado que es mi primera web hecha de manera individual y autónoma, lo considero todo un hito en mi objetivo de convertirme en **desarrolladora Front-End**
+**Anonymous Proxy Project** es más un ejercicio de evaluación de una **Adalaber** naciente, que un proyecto. Pero dado que es mi primera web hecha de manera individual y autónoma, lo considero todo un hito en mi objetivo a medio plazo de convertirme en **desarrolladora Front-End**
 
-En él, he aplicado la totalidad de los conocimientos adquiridos en las últimas semanas, tal y como se nos podía en el enunciado proporcionado por los profesores: **Sass, flexbox, CSS Grid, media queries, e interacciones usando transiciones y animaciones**
+En él he aplicado la totalidad de los conocimientos adquiridos en las últimas semanas sobre html y CSS, tal y como se nos podía en el enunciado proporcionado por los profesores, con: **Sass, flexbox, CSS Grid, media queries, e interacciones usando transiciones y animaciones**
 
-Juntas hemos aprendido, hemos debatido, nos hemos caído y levantado, nos hemos reído y, lo más importante: hemos disfrutado de todo este proceso iniciático. El inicio de un viaje muy importante, el inicio de una nueva profesión a la que añadir toda nuestra experiencia previa en distintos sectores laborales.
-
-5 mujeres sin miedo.
-
-**Because Fearle.css leads to success!**
-
-### Nuestra web
-
-Haz click aqui si quieres ver [The Fearle.css Project](http://beta.adalab.es/Project-promo-l-module-1-team-7/)
+Tras dos días de trabajo intenso, pausado y también disfrutado, este es el resultado **¡Me siento muy orgullosa!** Por haber alcanzado la meta con éxito, pero también por la gestión que hecho del tiempo, la distribución de los esfuerzos y todo el aprendizaje que he sumado durante el desarrollo de la tarea a mi mochila de programmer.
 
 ## Descripción Técnica
 
-Pues hemos de decirte que sin prisa pero sin pausa!
-A mediados de Diciembre 2020 empezamos a tomar contacto con nuestro lenguaje de marcado preferido: HTML.
+Lo pasos que he seguido han sido los sugeridos por los AdaTeachers. Empezando por el acceso a GitHub Classroom para clonarme el repo, la descarga del starter kit y la publicación de las GutHub Pages. Y continuando por una buena lectura del enunciado y un dibujo de la estructura con papel y lápiz.
 
-Para darle estilos a nuestras etiquetas, mucho CSS, que pasó a ser SASS y a ser SCSS.
-Y por qué no, le aplicamos un poquito de Bloque + Elemento + Modificador: BEM.
-Anidamos lo que pudimos entre padres, madres e hijos.
+En general, el desarrollo ha transcurrido sin grandes dificultades técnicas. Las principales dificultades las encontré en la parte superior de la página, donde se encuentra el header y el hero, tanto a nivel estructural como de estilo. Estaba menos familiarizada con estos elementos y sus etiquetas.
 
-No sin antes haber cogido papel y boli, hacer dibujos y esquemas y aplicar a nuestro plan: Flexbox y Diseño Responsive!
-
-Nos hemos peleado con Git y con GitHub, porque pushear entre cinco es bastante peligroso.
-
-En el bootcamp nos han proporcionado una plantilla de proyecto con funcionalidades preinstaladas y preconfiguradas: Adalab Web Starter Kit creado en node y gulp.
-Ha sido muy interesante sectorizar todo el código en carpetas y ficheros, y lo vemos muy práctico y ordenado.
-
-El proyecto lo hemos ido construyendo a medida que hemos ido absorbiendo conocimientos en el bootcamp de Adalab. Lo cual creemos meritorio por la dificultad que conlleva.
+He aprovechado el tiempo extra para implementar @minxins e @includes, y algunas transiciones más elaboradas. El resultado final lo puedes ver [aquí](http://beta.adalab.es/modulo-1-evaluacion-final-CrisBIB/)
 
 ## Desarrolladora
 
 Si te gusta mi trabajo y quieres saber más sobre mi, no dudes en \*\*ponerte en contacto conmigo. Aquí te dejo mi perfil a LinkedIN: [Cristina Blanco](http://www.linkedin.com/in/cristina-blanco-iglesias)
+
+### Mis repositorios Git
+
+Haz click aqui si quieres ver mi [perfil de GitHub](https://github.com/CrisBIB)
 
 ### Agradecimientos
 
