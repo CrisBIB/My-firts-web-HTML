@@ -1,8 +1,4 @@
-@mixin flex-box() {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+@import "core/mixins";
 
 .header {
   position: fixed;
@@ -13,6 +9,6 @@
     background: $color-menu;
     height: 44px;
     width: 44px;
-    @include flex-box();
+    @include flex-box(flex, row, center, center);
   }
 }

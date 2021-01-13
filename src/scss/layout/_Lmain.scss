@@ -1,14 +1,7 @@
-/* Punto de mejor: hacer un @import */
-@mixin flex-box() {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+@import "core/mixins";
 
 .main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex-box(flex, column, center, center);
   width: 100%;
 
   &__hero {
@@ -35,7 +28,7 @@
       width: 300px;
       color: $color-white;
       text-shadow: 0 2px 3px $color-font-shadow;
-      @include flex-box();
+      @include flex-box(flex, row, center, center);
       @media all and (min-width: 768px) {
         margin-top: 384px;
         font-size: 80px;
@@ -65,7 +58,7 @@
       height: 45px;
       width: 45px;
       border-radius: 50%;
-      @include flex-box();
+      @include flex-box(flex, row, center, center);
     }
   }
   &__article {
@@ -145,9 +138,7 @@
   &__section {
     background: $color-section;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-box(flex, column, center, center);
     &--title {
       font-family: $font-titles;
       font-weight: bold;
@@ -188,9 +179,9 @@
 
 .grid {
   list-style: none;
-  display: grid;
   font-family: $font-secondary;
   text-align: center;
+  display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
   row-gap: 45px;
@@ -238,9 +229,7 @@
 .text-icon {
   position: absolute;
   top: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex-box(flex, column, center, center);
   width: 100%;
   height: 100vh;
 }

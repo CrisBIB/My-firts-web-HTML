@@ -1,17 +1,13 @@
-/* Punto de mejora: @mixin flexBox-column ()  */
+@import "core/mixins";
+
 .footer {
   background: $color-footer;
   color: $color-white;
   font-family: $font-secondary;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include flex-box(flex, column, center, center);
   padding-bottom: 30px;
   @media all and (min-width: 768px) {
-    flex-direction: row;
-    align-items: initial;
-    justify-content: space-between;
+    @include flex-box(flex, row, space-between, initial);
   }
   @media all and (min-width: 1280px) {
     justify-content: space-evenly;
@@ -23,8 +19,7 @@
     width: 45px;
     border-radius: 50%;
     box-shadow: 0 2px 4px 0 $color-box-shadow;
-    display: flex;
-    justify-content: center;
+    @include flex-box(flex, row, center, center);
     transform: translateY(-50%);
     @media all and (min-width: 768px) {
       position: absolute;
@@ -35,15 +30,12 @@
     font-size: 16px;
     text-transform: uppercase;
     line-height: 1.88;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-box(flex, column, center, center);
     margin-top: 15px;
     margin-bottom: 15px;
     @media all and (min-width: 768px) {
       width: 210px;
-      align-items: flex-start;
-      justify-content: initial;
+      @include flex-box(flex, column, initial, flex-start);
       margin-top: 45px;
     }
     &--link {
@@ -65,7 +57,7 @@
     }
   }
 }
-.down {
+.components {
   @media all and (min-width: 768px) {
     order: -1;
   }
