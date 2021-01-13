@@ -14,7 +14,7 @@ Lo pasos que he seguido han sido los sugeridos por los AdaTeachers. Empezando po
 
 En general, el desarrollo ha transcurrido sin grandes dificultades técnicas. Las principales dificultades las encontré en la parte superior de la página, donde se encuentra el header y el hero, tanto a nivel estructural como de estilo. Estaba menos familiarizada con estos elementos y sus etiquetas.
 
-He aprovechado el tiempo extra para implementar @minxins e @includes, y algunas transiciones más elaboradas. El resultado final lo puedes ver [aquí](http://beta.adalab.es/modulo-1-evaluacion-final-CrisBIB/)
+He aprovechado el tiempo extra para implementar @minxins e @includes, y algunas transiciones más elaboradas. El resultado final lo puedes ver [aquí](http://beta.adalab.es/modulo-1-evaluacion-final-CrisBIB/).
 
 ## Desarrolladora
 
