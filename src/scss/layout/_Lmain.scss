@@ -51,6 +51,7 @@
     &--subtitle {
       color: $color-white;
       font-family: $font-secondary;
+      font-weight: 400;
       top: 10px;
       font-size: 16px;
       margin-bottom: 45px;
@@ -118,16 +119,16 @@
       width: 76px;
       color: $color-buttons;
       font-family: $font-secondary;
+      font-weight: 500;
       font-size: 20px;
       text-transform: capitalize;
-      font-weight: 500; /* Descargar tipo de fuente */
       border-radius: 22.5px;
       background-color: $color-white;
       margin-bottom: 45px;
       border: solid 2px $color-buttons;
-      &:hover {
+      /* &:hover {
         border-radius: 0;
-      } /* No funciona bien, revisar */
+      } No funciona bien, revisar */
       &:active {
         background-color: $color-buttons;
         color: $color-white;
@@ -234,7 +235,7 @@
 }
 
 /* Punto de mejora: reubicar */
-.translate {
+.text-icon {
   position: absolute;
   top: 0;
   display: flex;
