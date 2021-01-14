@@ -54,18 +54,25 @@
       }
     }
     &--scroll-down {
-      background: $color-white;
-      height: 45px;
-      width: 45px;
-      border-radius: 50%;
-      @include flex-box(flex, row, center, center);
+      display: none;
+      @media all and (min-width: 768px) {
+        background: $color-white;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        @include flex-box(flex, row, center, center);
+      }
     }
   }
   &__article {
     background: $color-white;
     margin-top: 30px;
+    @media all and (min-width: 768px) {
+      @include flex-box(flex, column, initial, flex-start);
+    }
     @media all and (min-width: 1280px) {
       margin-top: 60px;
+      display: block;
     }
     &--small {
       color: $color-small;
@@ -92,6 +99,7 @@
       @media all and (min-width: 768px) {
         font-size: 26px;
         margin-bottom: 30px;
+        order: -1;
       }
       @media all and (min-width: 1280px) {
         font-size: 32px;
@@ -102,13 +110,14 @@
       font-size: 18px;
       color: $color-p;
       line-height: 1.5;
-      margin-bottom: 30px;
+      margin-bottom: 50px;
       @media all and (min-width: 768px) {
         font-size: 20px;
+        margin-bottom: 30px;
       }
     }
     &--button {
-      height: 45px;
+      /*  height: 45px;
       width: 76px;
       color: $color-buttons;
       font-family: $font-secondary;
@@ -118,7 +127,16 @@
       border-radius: 22.5px;
       background: $color-white;
       margin-bottom: 45px;
+      border: solid 2px $color-buttons; */
+      height: 45px;
+      width: 184px;
+      color: $color-white;
+      text-transform: capitalize;
+      font-family: $font-secondary;
+      font-size: 20px;
+      background-color: $color-buttons;
       border: solid 2px $color-buttons;
+      border-radius: 22.5px;
       transition: border-radius ease 2s;
       &:hover {
         border-radius: 0;
