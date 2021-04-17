@@ -30,3 +30,12 @@
     outline: none;
   }
 }
+
+@mixin scroll {
+  background: $color-white;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px 0 $color-box-shadow;
+  @include flex-box(flex, row, center, center);
+}

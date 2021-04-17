@@ -14,12 +14,7 @@
   }
   &__scroll-up {
     margin-bottom: 15px;
-    background: $color-white;
-    height: 45px;
-    width: 45px;
-    border-radius: 50%;
-    box-shadow: 0 2px 4px 0 $color-box-shadow;
-    @include flex-box(flex, row, center, center);
+    @include scroll;
     transform: translateY(-50%);
     animation-duration: 5s;
     animation-name: bounce;
@@ -45,7 +40,7 @@
       left: 48%;
     }
   }
-  &__list {
+  &__column {
     font-size: 16px;
     text-transform: uppercase;
     line-height: 1.88;
@@ -56,6 +51,9 @@
       width: 210px;
       @include flex-box(flex, column, initial, flex-start);
       margin-top: 45px;
+    }
+    &--cris {
+      text-transform: capitalize;
     }
     &--link {
       text-decoration: none;
@@ -76,11 +74,15 @@
     }
   }
 }
-.components {
+.icons {
   @media all and (min-width: 768px) {
     order: -1;
   }
-  &__love-icon {
+  &__love {
     margin: 0 5px;
+  }
+  &__cris {
+    width: 15px;
+    padding-right: 2px;
   }
 }
