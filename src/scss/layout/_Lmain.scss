@@ -7,9 +7,8 @@
   &__hero {
     width: 100%;
     height: 100vh;
-    margin: auto;
     &--image {
-      background-image: url("../images/cover.jpg");
+      background-image: url("../images/cover3.jpg");
       background-size: cover;
       background-position: center;
       margin: auto;
@@ -23,14 +22,13 @@
       font-size: 42px;
       line-height: 55px;
       text-align: center;
-      margin-top: 284px;
+      margin-top: 300px;
       margin-bottom: 10px;
       width: 300px;
       color: $color-white;
       text-shadow: 0 2px 3px $color-font-shadow;
       @include flex-box(flex, row, center, center);
       @media all and (min-width: 768px) {
-        margin-top: 384px;
         font-size: 80px;
         line-height: 106px;
         margin-bottom: 20px;
@@ -54,18 +52,29 @@
       }
     }
     &--scroll-down {
-      background: $color-white;
-      height: 45px;
-      width: 45px;
-      border-radius: 50%;
-      @include flex-box(flex, row, center, center);
+      margin-bottom: 53px;
+      @media all and (min-width: 768px) {
+        background: $color-white;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        margin-bottom: 45px;
+        @include flex-box(flex, row, center, center);
+        @media all and (min-width: 1280px) {
+          margin-bottom: 13px;
+        }
+      }
     }
   }
   &__article {
     background: $color-white;
     margin-top: 30px;
+    @media all and (min-width: 768px) {
+      @include flex-box(flex, column, initial, flex-start);
+    }
     @media all and (min-width: 1280px) {
       margin-top: 60px;
+      display: block;
     }
     &--small {
       color: $color-small;
@@ -92,6 +101,7 @@
       @media all and (min-width: 768px) {
         font-size: 26px;
         margin-bottom: 30px;
+        order: -1;
       }
       @media all and (min-width: 1280px) {
         font-size: 32px;
@@ -102,37 +112,17 @@
       font-size: 18px;
       color: $color-p;
       line-height: 1.5;
-      margin-bottom: 30px;
+      margin-bottom: 50px;
       @media all and (min-width: 768px) {
         font-size: 20px;
+        margin-bottom: 30px;
       }
     }
     &--button {
       height: 45px;
       width: 76px;
-      color: $color-buttons;
-      font-family: $font-secondary;
-      font-weight: 500;
-      font-size: 20px;
-      text-transform: capitalize;
-      border-radius: 22.5px;
-      background: $color-white;
       margin-bottom: 45px;
-      border: solid 2px $color-buttons;
-      transition: border-radius ease 2s;
-      &:hover {
-        border-radius: 0;
-        cursor: pointer;
-      }
-      &:active {
-        background-color: $color-footer;
-        color: $color-white;
-        border: none;
-        outline: none;
-      }
-      &:focus {
-        outline: none;
-      }
+      @include buttonStyles;
       @media all and (min-width: 768px) {
         margin-bottom: 60px;
         width: 91px;
@@ -159,29 +149,10 @@
       }
     }
     &--button {
-      /* Punto de mejora: @mixin */
       height: 45px;
       width: 184px;
-      color: $color-white;
-      text-transform: capitalize;
-      font-family: $font-secondary;
-      font-size: 20px;
-      background-color: $color-buttons;
-      border: solid 2px $color-buttons;
-      border-radius: 22.5px;
       margin-bottom: 60px;
-      transition: border-radius ease 2s;
-      &:hover {
-        border-radius: 0;
-        cursor: pointer;
-      }
-      &:active {
-        background-color: $color-footer;
-      }
-      &:focus {
-        outline: none;
-        border: none;
-      }
+      @include buttonStyles;
       @media all and (min-width: 768px) {
         width: 210px;
       }
